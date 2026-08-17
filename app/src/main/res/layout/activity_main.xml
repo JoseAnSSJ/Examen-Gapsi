@@ -13,8 +13,12 @@
     android:layout_height="wrap_content"
     android:hint="@string/text_search"
     android:inputType="text"
+    android:imeOptions="actionSearch"
+    android:singleLine="true"
     android:autofillHints="name"
     android:padding="12dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:drawableStart="@drawable/ic_search"
     android:drawablePadding="8dp"
     android:layout_marginHorizontal="12dp"
@@ -22,6 +26,18 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <TextView
@@ -39,10 +55,21 @@
         />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="12dp"
         app:layout_constraintTop_toBottomOf="@id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rvPages"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+         android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -7,4 +7,5 @@
     <string name="error_show_product">Error al cargar productos</string>
     <string name="txt_error_show_product">Error al cargar los productos</string>
     <string name="txt_retry">Reintentar</string>
+    <string name="cd_history">Historial</string>
 </resources>
