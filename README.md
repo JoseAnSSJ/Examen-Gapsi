@@ -347,5 +347,6 @@ Hilt centraliza la creación e inyección de dependencias, evitando que Activiti
 ---
 
 ## Autor
+José Antonio García Rodíguez
 
 Desarrollado como prueba técnica Android para Gapsi.
