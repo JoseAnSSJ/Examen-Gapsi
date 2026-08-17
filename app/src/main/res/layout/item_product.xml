@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_image"
+            android:contentDescription="@string/cd_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/tvProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Producto"
+            android:maxLines="3"
+            app:layout_constraintTop_toBottomOf="@id/imgProduct"
+            app:layout_constraintStart_toStartOf="@id/imgProduct"
+            app:layout_constraintEnd_toEndOf="@id/imgProduct"
+            />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$12,000"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@id/tvProduct"
+            app:layout_constraintStart_toStartOf="@id/imgProduct"
+            app:layout_constraintEnd_toEndOf="@id/imgProduct"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

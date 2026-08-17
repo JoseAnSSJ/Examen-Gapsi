@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExamenGapsi</string>
+    <string name="text_search">Busqueda…</string>
+    <string name="cd_search">Busqueda de productos</string>
+    <string name="txt_product_not_find">Producto no encontrado</string>
+    <string name="cd_image">Imagen de producto</string>
+    <string name="error_show_product">Error al cargar productos</string>
+    <string name="txt_error_show_product">Error al cargar los productos</string>
+    <string name="txt_retry">Reintentar</string>
 </resources>
